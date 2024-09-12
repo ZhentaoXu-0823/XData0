@@ -1,0 +1,18 @@
+##########说明：
+保存CustomMDM各个接口在系统中是否实现的xml文件
+    0 <-----> 接口未实现
+    1 <-----> 接口已实现
+关联 CustomAPI.getApiAvailable(apiName)
+其它多返回值：
+    -1 <-----> 执行报错
+    -10001 <-----> 接口功能未实现
+
+
+
+##########配置：vendor/[kozen/xcheng]/common/device.mk
+ifneq ($(strip $(CUSTOM_MDM_SUPPORT)), no)
+    PRODUCT_PACKAGES += CustomMDM
+endif
+# add for custom mdm api information
+PRODUCT_COPY_FILES += vendor/kozen/packages/app/CustomMDM/custom_mdm_config.xml:system/etc/custom_mdm_config.xml
+# add for custom mdm api information
