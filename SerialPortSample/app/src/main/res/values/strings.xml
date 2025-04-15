@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">SerialPortSample</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="label_port_open">OPEN SerialPort</string>
+    <string name="label_port_close">CLOSE SerialPort</string>
+
+    <string name="label_port_connect">Connect SerialPort</string>
+    <string name="label_port_disconnect">DisConnect SerialPort</string>
+    <string name="label_port_send">SEND</string>
+    <string name="label_port_recv">RECV</string>
+    <string name="label_port_nonblockrecv">NONBLOCK RECV</string>
+
+    <string name="label_port_reset">RESET</string>
+    <string name="label_port_cancelrecv">CANCEL RECV</string>
+
+
+</resources>

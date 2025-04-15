@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="config_printer_text_support">true</bool>
+    <bool name="config_printer_margin_support">true</bool>
+    <bool name="config_printer_barcode_support">true</bool>
+    <bool name="config_printer_qrcode_support">true</bool>
+    <bool name="config_printer_bitmap_support">true</bool>
+    <bool name="config_printer_wrappaper_support">true</bool>
+    <bool name="config_printer_speed_support">true</bool>
+    <bool name="config_printer_version_support">true</bool>
+    <bool name="config_printer_upgrade_support">true</bool>
+    <bool name="config_printer_paper_support">true</bool>
+    <bool name="config_printer_receipt_support">true</bool>
+    <bool name="config_printer_receipt1_support">true</bool>
+    <bool name="config_printer_receipt2_support">true</bool>
+    <bool name="config_printer_font_support">true</bool>
+    <bool name="config_printer_length_support">true</bool>
+    <bool name="config_printer_temperature_support">true</bool>
+    <bool name="config_printer_defaults">true</bool>
+</resources>

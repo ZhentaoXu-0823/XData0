@@ -1,0 +1,131 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/content_view"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginTop="30dp"
+              android:orientation="vertical" >
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+            <Button
+                    android:id="@+id/id_port_open"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_button_height"
+                    android:layout_marginLeft="@dimen/layout_button_margin"
+                    android:layout_marginRight="@dimen/layout_button_margin"
+                    android:text="@string/label_port_open" />
+
+            <Button
+                    android:id="@+id/id_port_connect"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_button_height"
+                    android:layout_marginLeft="@dimen/layout_button_margin"
+                    android:layout_marginRight="@dimen/layout_button_margin"
+                    android:text="@string/label_port_connect" />
+
+            <Button
+                android:id="@+id/id_port_send"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_button_height"
+                android:layout_marginLeft="@dimen/layout_button_margin"
+                android:layout_marginRight="@dimen/layout_button_margin"
+                android:text="@string/label_port_send" />
+					
+			<Button
+                android:id="@+id/id_port_recv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_button_height"
+                android:layout_marginLeft="@dimen/layout_button_margin"
+                android:layout_marginRight="@dimen/layout_button_margin"
+                android:visibility="gone"
+                android:text="@string/label_port_recv" />
+				
+			<Button
+                android:id="@+id/id_port_nonblockrecv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_button_height"
+                android:layout_marginLeft="@dimen/layout_button_margin"
+                android:layout_marginRight="@dimen/layout_button_margin"
+                android:visibility="gone"
+                android:text="@string/label_port_nonblockrecv" />
+				
+			<Button
+                android:id="@+id/id_port_reset"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_button_height"
+                android:layout_marginLeft="@dimen/layout_button_margin"
+                android:layout_marginRight="@dimen/layout_button_margin"
+                android:visibility="gone"
+                android:text="@string/label_port_reset" />
+				
+			<Button
+                android:id="@+id/id_port_cancelrecv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_button_height"
+                android:layout_marginLeft="@dimen/layout_button_margin"
+                android:layout_marginRight="@dimen/layout_button_margin"
+                android:visibility="gone"
+                android:text="@string/label_port_cancelrecv" />
+				
+            <Button
+                    android:id="@+id/id_port_disconnect"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_button_height"
+                    android:layout_marginLeft="@dimen/layout_button_margin"
+                    android:layout_marginRight="@dimen/layout_button_margin"
+                    android:text="@string/label_port_disconnect" />
+
+            <Button
+                    android:id="@+id/id_port_close"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_button_height"
+                    android:layout_marginLeft="@dimen/layout_button_margin"
+                    android:layout_marginRight="@dimen/layout_button_margin"
+                    android:text="@string/label_port_close" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PortManager recvData:"/>
+
+                <TextView
+                    android:id="@+id/tv_portmanager_recvdata"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PortManagerGS0 recvData:"/>
+
+                <TextView
+                    android:id="@+id/tv_portmanagergs0_recvdata"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
